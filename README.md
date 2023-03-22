@@ -12,7 +12,7 @@ Practicas guia de ESP32 basica con instalacion de la tarjeta en el IDE Arduino, 
 
 
 
-Enlaces al contenido Orinal:
+Enlaces al contenido Original:
 
 __https://randomnerdtutorials.com/esp32-pir-motion-sensor-interrupts-timers/__
 
