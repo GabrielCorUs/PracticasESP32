@@ -8,14 +8,16 @@ struct Boton {
 	bool pressed;
 };
 
+// se declara el pin al que se conecto el boton en este caso el 18, el numero de pulsaciones en 0 y el estado de inicio del boton
+Boton button1 = {18, 0, false};
+
 // Rutina de servicio de la interrupción
 void IRAM_ATTR isr() {
 	button1.numberKeyPresses++;
 	button1.pressed = true;
 }
 
-// se declara el pin al que se conecto el boton en este caso el 18, el numero de pulsaciones en 0 y el estado de inicio del boton
-Boton button1 = {18, 0, false};
+
 
 void setup() {
 	Serial.begin(115200); //Iniciamos el monitor serial
